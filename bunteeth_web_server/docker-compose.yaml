@@ -1,0 +1,31 @@
+services: 
+  cloudflared: 
+    image: cloudflare/cloudflared 
+    container_name: cloudflare-tunnel 
+    restart: unless-stopped 
+    command: tunnel run 
+    environment: 
+      - TUNNEL_TOKEN=eyJhIjoiY2E1NDVhZTBjYjBiOTljMGU2ZTBjMThhMjZkNTQ2MTAiLCJ0IjoiYmQ0N2U0MzktNDQ5Zi00YzQyLTk3MTctZTc5MmZhYzA5Nzc4IiwicyI6Ik5qZGpOR05tTW1JdE1XTXlPUzAwWVRnd0xXSm1Nak10TW1SaE5XRmxNek5sT0RBeCJ9
+
+  # Simple web server in python
+  web:
+    image: python:3.9-slim
+    container_name: web-server
+    command: python -m http.server 8000
+    volumes:
+      - /volume1/docker/bunteeth_web_server/www/html:/app
+    working_dir: /app
+    expose:
+      - '8000'
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    ports:
+      # Repace 7080 by your desired port
+      - '8080:80'
+    volumes:
+      - /volume1/docker/bunteeth_web_server/nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - web

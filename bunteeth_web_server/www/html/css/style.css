@@ -1,0 +1,128 @@
+header {
+  color: white;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+}
+
+nav img {
+ /*width: 15%;
+ height: 15%;*/
+ position: relative;
+ top: -10px;
+}
+
+nav img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+::-webkit-scrollbar { /* Chrome */
+  display: none;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Verdana;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+hr {
+border: 2.5px solid #C7406B;
+}
+
+main {
+  background-color: black;
+  color: white;
+  font-family: Verdana;
+}
+
+#pfp {
+  border: 5px solid #644117;
+  position: absolute;
+  top:  10px;
+  left: 10px;
+  width: 50%;
+}
+
+footer {
+  height: 100px;
+}
+
+  /* THIS IS HOW U DO CONTAINERS :D :
+  			THIS IS HOW 2 DO BACKGROUND IMAGES!!!!!!!!!
+  			  background-image: url(../images/sugarbunny.png);
+			  background-repeat: no-repeat;
+			  background-size: cover;
+
+  		THIS IS HOW 2 DO GRADIENTS !!!!!!!!!!!!!
+  			red:
+			  background: #C7406B;
+			  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%);
+			green:
+			  background: #93C740;
+			  background: linear-gradient(180deg, rgba(147, 199, 64, 1) 0%, rgba(96, 128, 45, 1) 25%, rgba(52, 69, 24, 1) 75%); */
+
+.body-container {
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 1000px;
+  text-align: center;
+}
+
+.leftsidebar-container {
+  position: absolute;
+  left: 0px;
+  width: 20%;
+  height: 99%;
+  top: 0px;
+  background: #C7406B;
+  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%);
+  border: 5px solid #644117;
+}
+
+.test-img {
+  position: absolute;
+  left: 10px;
+  top:  20%;
+  text-align: left;
+}
+
+.rightsidebar-container {
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  height: 99%;
+  top: 0px;
+  background: #C7406B;
+  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%);
+  border: 5px solid #644117;
+ /* background: black;
+  border-right-color: black;
+  border-top-color: black;
+  border-bottom-color: black; */
+}
+
+.content-container {
+  position: absolute;
+  left: 20.5%;
+  width: 58.5%;
+  height: 99%;
+  text-align: center;
+  background: #93C740;
+  background: linear-gradient(180deg, rgba(147, 199, 64, 1) 0%, rgba(96, 128, 45, 1) 25%, rgba(52, 69, 24, 1) 75%);
+  border: 5px solid #644117;
+  border-right-color: black;
+  border-left-color: black;
+}
