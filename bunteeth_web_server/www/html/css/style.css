@@ -10,14 +10,13 @@ header img {
 nav {
   text-align: center;
   padding: 10px;
-  background-color: black;
 }
 
 nav img {
  /*width: 15%;
  height: 15%;*/
  position: relative;
- top: -10px;
+ /* top: -10px; */
 }
 
 nav img:hover {
@@ -38,11 +37,10 @@ body {
 }
 
 hr {
-border: 2.5px solid #C7406B;
+border: 2.5px solid #93C740;
 }
 
 main {
-  background-color: black;
   color: white;
   font-family: Verdana;
 }
@@ -114,14 +112,21 @@ footer {
   border-bottom-color: black; */
 }
 
+.rightsidebar-container ul {
+  position: absolute;
+  text-align: left;
+}
+
 .content-container {
   position: absolute;
   left: 20.5%;
   width: 58.5%;
   height: 99%;
   text-align: center;
-  background: #93C740;
-  background: linear-gradient(180deg, rgba(147, 199, 64, 1) 0%, rgba(96, 128, 45, 1) 25%, rgba(52, 69, 24, 1) 75%);
+  background: #6e6e6e;
+  background: linear-gradient(180deg, rgba(110, 110, 110, 1) 0%, rgba(77, 77, 77, 1) 25%, rgba(43, 43, 43, 1) 75%);
+  /*background: #93C740;
+  background: linear-gradient(180deg, rgba(147, 199, 64, 1) 0%, rgba(96, 128, 45, 1) 25%, rgba(52, 69, 24, 1) 75%);*/
   border: 5px solid #644117;
   border-right-color: black;
   border-left-color: black;
