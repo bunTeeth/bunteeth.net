@@ -13,13 +13,13 @@
   <body>
     <header>
     <!--title image -->
-      <img src="images/title.png">
+      <img id="title" src="images/title.png">
     <!--navigation menu -->
       <nav>
             <a href="/"><img id="home-button" src="images/home.png" style="display: inline-block;"></a>
             <a href="/about.html"><img id="about-button" src="images/about.png" style="display: inline-block;"></a>
 			<a href="https://theatre.bunteeth.net"><img id="theatre-button" src="images/theatre.png" style="display:inline-block;"></a>
-			<!--<hr>-->
+			<a href="https://github.com/bunTeeth"><img id="github-button" src="images/github2.png" style="display:inline-block;"></a>
       </nav>
     </header>
 
@@ -54,20 +54,25 @@
 				<img src="images/iono.gif" style="display:inline-block;">
 			</div>
 			<!-- RIGHT SIDEBAR-->
-			<div class="rightsidebar-container">
-				<!--TODO-->
-				<p><b>Maybe this could b like a static sidebar across all pages ?????</b></p>
-				<ul>
-					<li>Smth</li>
-					<li>Like</li>
-					<li>This</li>
-					<li>And each list item</li>
-					<li>Links 2 another page ??</li>
-					<li>But then whats the point of the navbar ?</li>
-				<ul>
+			<div class="rightsidebar">
+				<h2><b>Blog:</b></h2>
+				<div class="blog-current">
+					<ul>
+						<li><b>You are here:</b></li>
+						<li><a href="/">---Home---</a></li>
+					</ul>
+				</div>
+				<div class="blog-more">
+					<ul>
+						<li><b>Here are some other silly posts:</b></li>
+						<li><a href="/blog/introspection.html">---Introspection---</a></li>
+						<li><a href="/about.html">---About Me !---</a></li>
+						<li><a href="/blog/tcgbinder.html">---My Pokemon Card Binder !---</a></li>
+					</ul>
+				</div>
 			</div>
 			<!-- LEFT SIDEBAR-->
-			<div class="leftsidebar-container">
+			<div class="leftsidebar">
 				<img id="pfp" src="images/sugarbunny.png" style="display:inline-block;">
 				<div class="test-img">
 					<p>Isnt this pic so awesum sauce !</p>

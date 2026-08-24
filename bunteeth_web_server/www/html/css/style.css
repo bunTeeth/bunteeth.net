@@ -7,21 +7,31 @@ header img {
   margin: 0 auto;
 }
 
+#title {
+  position: relative;
+  bottom: 20px;
+}
+
 nav {
   text-align: center;
-  padding: 10px;
+  position: relative;
+  bottom: 10px;
 }
 
 nav img {
  /*width: 15%;
  height: 15%;*/
  position: relative;
- /* top: -10px; */
 }
 
 nav img:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+#github-button {
+  position: relative;
+  top: 12px;
 }
 
 ::-webkit-scrollbar { /* Chrome */
@@ -57,6 +67,10 @@ footer {
   height: 100px;
 }
 
+footer img {
+  width: 10%;
+}
+
   /* THIS IS HOW U DO CONTAINERS :D :
   			THIS IS HOW 2 DO BACKGROUND IMAGES!!!!!!!!!
   			  background-image: url(../images/sugarbunny.png);
@@ -79,7 +93,7 @@ footer {
   text-align: center;
 }
 
-.leftsidebar-container {
+.leftsidebar {
   position: absolute;
   left: 0px;
   width: 20%;
@@ -97,7 +111,7 @@ footer {
   text-align: left;
 }
 
-.rightsidebar-container {
+.rightsidebar {
   position: absolute;
   right: 0px;
   width: 20%;
@@ -112,9 +126,28 @@ footer {
   border-bottom-color: black; */
 }
 
-.rightsidebar-container ul {
+.rightsidebar ul {
   position: absolute;
   text-align: left;
+/*  list-style-type: none;*/
+  list-style-image: url('https://pixelsafari.neocities.org/favicon/nature/plant/flower/blue9.gif');
+}
+
+.rightsidebar a {
+  position: relative;
+  color:#40C79C;
+  left: 30px;
+  top: 5px;
+}
+
+.blog-current {
+  position: relative;
+  height: 50px;
+}
+
+.blog-more {
+  position: relative;
+  top: 30px;
 }
 
 .content-container {
