@@ -164,3 +164,25 @@ footer img {
   border-right-color: black;
   border-left-color: black;
 }
+
+.binder-pages {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  text-align: center;
+  background-image: url("/images/page1.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #644117;
+}
+
+.binderButton {
+  position: relative;
+  top: 80%;
+}
+
+#pageCaption {
+  position: relative;
+  top: 75%;
+}
