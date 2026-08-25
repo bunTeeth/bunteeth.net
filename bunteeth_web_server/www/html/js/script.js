@@ -1,11 +1,11 @@
 //////STORE CURRENT URL//////
-var currentURL = window.location.href;
+let currentURL = window.location.href;
 ////// ROCK PAPER SCISSORS//////
-var botPick= 0
-var playerPick = "String"
+let botPick= 0
+let playerPick = "String"
 //////SET PAGE 1//////
-var binderPageNum = 1;
-var binderPageCaption = 1;
+let binderPageNum = 1;
+let binderPageCaption = 1;
 //////////////////SET CAPTIONS//////////////////////////
 const captions = new Map();
 	captions.set(1, " Here's my opening page of Glaceon & Leafeon. This page is for non-illustration rares. All I'm  missing rn are GX's. ^-^");
@@ -41,7 +41,7 @@ function whenWindowLoads() {
 	if (currentURL.indexOf("http://site") != -1) {
 		window.location.replace("https://site.bunteeth.net")
 	}
-
+//////////////////////THIS DOESNT RLY WORK :C//////////////////////
 	if (currentURL.indexOf("neocities") != -1) {
 		document.getElementById('neocities').innerHTML = "Hi neocities viewer ^-^ did u know u can access my site from <a href='https://site.bunteeth.net' style='color:yellow'>here </a>too :3";
 	}
@@ -98,19 +98,22 @@ function buttonTest() {
 function pickRock() {
 	document.getElementById('botSpace').innerHTML = "";
 	document.getElementById('resultSpace').innerHTML = "";
-	return playerPick = "You picked Rock !";
+	playerPick = "You picked Rock !";
+	return playerPick;
 }
 
 function pickPaper() {
 	document.getElementById('botSpace').innerHTML = "";
 	document.getElementById('resultSpace').innerHTML = "";
-	return playerPick = "You picked Paper !";
+	playerPick = "You picked Paper !";
+	return playerPick;
 }
 
 function pickScissors() {
 	document.getElementById('botSpace').innerHTML = "";
 	document.getElementById('resultSpace').innerHTML = "";
-	return playerPick = "You picked Scissors !";
+	playerPick = "You picked Scissors !";
+	return playerPick;
 }
 ///////////////////COMPARES PLAYER CHOICE 2 BOT CHOICE///////////////////
 function gameResults() {
@@ -132,8 +135,11 @@ function gameResults() {
 		return 	document.getElementById('resultSpace').innerHTML = "Awwww u lose :c";
 	}
 }
-////////////////BUTTON THAT REFRESHES PAGE (I DONT THINK THIS IS NECESSARY)////////////////
+////////////////BUTTON THAT RESETS THE GAME////////////////
 function refresh() {
 	playerPick = "String";
-	window.location.reload();
+	botPick = 0;
+	document.getElementById('playerSpace').innerHTML = "";
+	document.getElementById('botSpace').innerHTML = "";
+	document.getElementById('resultSpace').innerHTML = "";
 }

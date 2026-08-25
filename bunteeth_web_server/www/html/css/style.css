@@ -51,6 +51,8 @@ border: 2.5px solid #93C740;
 }
 
 main {
+  /*height: 800px;
+  width: 600px;*/
   color: white;
   font-family: Verdana;
 }
@@ -68,7 +70,7 @@ footer {
 }
 
 footer img {
-  width: 10%;
+  width: 7%;
 }
 
   /* THIS IS HOW U DO CONTAINERS :D :
@@ -163,6 +165,7 @@ footer img {
   border: 5px solid #644117;
   border-right-color: black;
   border-left-color: black;
+  overflow: scroll;
 }
 
 .binder-pages {
@@ -180,9 +183,54 @@ footer img {
 .binderButton {
   position: relative;
   top: 80%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: transparent;
+  background-image: url(/images/eeveerun.gif);
+  color: white;
+  width: 10%;
+  height: 2%;
+  cursor: pointer;
+}
+
+.binderButton p {
+  position: relative;
+  bottom: 15px;
+  font-size: 15px;
+}
+
+.binderButton p:hover {
+  color: grey;
+}
+
+#binderButtonNext{
+  position: relative;
+  left: 20px;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
+#binderButtonNext p {
+  position: relative;
+  left: 20px;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
+#binderButtonBack {
+  position: relative;
+  right: 20px;
+}
+
+#binderButtonBack p {
+  position: relative;
+  left: 20px;
 }
 
 #pageCaption {
   position: relative;
   top: 75%;
+/*  border-top: 2px solid grey;
+  border-bottom: 2px solid gray; */
 }
