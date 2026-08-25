@@ -38,10 +38,12 @@ function whenWindowLoads() {
 		alert("RUN AWAYYY THIS SITE ISNT OPTIMIZED 4 MOBILE DEVICES !!!!!!!");
 	}
 ////////////////////HTTP REDIRECT////////////////////
-	if (currentURL.indexOf("http://") != -1) {
+	if (currentURL.indexOf("http://site") != -1) {
 		window.location.replace("https://site.bunteeth.net")
-	} else if (currentURL.indexOf("bunnybox") != -1) {
-		break;
+	}
+
+	if (currentURL.indexOf("neocities") != -1) {
+		document.getElementById('neocities').innerHTML = "Hi neocities viewer ^-^ did u know u can access my site from <a href='https://site.bunteeth.net' style='color:yellow'>here </a>too :3";
 	}
 }
 
