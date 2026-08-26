@@ -35,7 +35,7 @@ function mobileCheck() {
 
 function whenWindowLoads() {
 	if (mobileCheck() == true) {
-		alert("RUN AWAYYY THIS SITE ISNT OPTIMIZED 4 MOBILE DEVICES !!!!!!!");
+		alert("FYI this page isn't optimized 4 mobile");
 	}
 ////////////////////HTTP REDIRECT////////////////////
 	if (currentURL.indexOf("http://site") != -1) {
