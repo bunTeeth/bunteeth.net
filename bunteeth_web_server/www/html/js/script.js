@@ -143,3 +143,7 @@ function refresh() {
 	document.getElementById('botSpace').innerHTML = "";
 	document.getElementById('resultSpace').innerHTML = "";
 }
+
+function changeIFrame(url) {
+	document.getElementById('frame').setAttribute("src", url)
+}
