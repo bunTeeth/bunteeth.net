@@ -3,13 +3,11 @@ header {
 }
 
 header img {
-  display: block;
   margin: 0 auto;
-}
-
-#title {
+  display: block;
   position: relative;
-  bottom: 20px;
+  bottom: 0px;
+  left: 0px;
 }
 
 nav {
@@ -20,8 +18,8 @@ nav {
 
 nav img {
  /*width: 15%;
- height: 15%;*/
- position: relative;
+  height: 15%;*/
+  position: relative;
 }
 
 nav img:hover {
@@ -31,7 +29,7 @@ nav img:hover {
 
 #github-button {
   position: relative;
-  top: 12px;
+  top: 15px;
 }
 
 ::-webkit-scrollbar { /* Chrome */
@@ -47,7 +45,7 @@ body {
 }
 
 hr {
-border: 2.5px solid #93C740;
+border: 2.5px solid #361612;
 }
 
 main {
@@ -58,7 +56,7 @@ main {
 }
 
 #pfp {
-  border: 5px solid #644117;
+  border: 5px solid #361612;
   position: absolute;
   top:  10px;
   left: 10px;
@@ -72,20 +70,6 @@ footer {
 footer img {
   width: 7%;
 }
-
-  /* THIS IS HOW U DO CONTAINERS :D :
-  			THIS IS HOW 2 DO BACKGROUND IMAGES!!!!!!!!!
-  			  background-image: url(../images/sugarbunny.png);
-			  background-repeat: no-repeat;
-			  background-size: cover;
-
-  		THIS IS HOW 2 DO GRADIENTS !!!!!!!!!!!!!
-  			red:
-			  background: #C7406B;
-			  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%);
-			green:
-			  background: #93C740;
-			  background: linear-gradient(180deg, rgba(147, 199, 64, 1) 0%, rgba(96, 128, 45, 1) 25%, rgba(52, 69, 24, 1) 75%); */
 
 .body-container {
   position: relative;
@@ -103,9 +87,13 @@ footer img {
   width: 20%;
   height: 99%;
   top: 0px;
-  background: #C7406B;
-  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%);
-  border: 5px solid #644117;
+/*  background: #C7406B;
+  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%); */
+  background: #123524;
+  background: linear-gradient(180deg, rgba(18, 53, 36, 1) 0%, rgba(11, 31, 21, 1) 25%, rgba(6, 18, 12, 1) 75%);
+/*  background: #84172C;
+  background: linear-gradient(180deg, rgba(132, 23, 44, 1) 0%, rgba(107, 21, 40, 1) 25%, rgba(74, 14, 27, 1) 75%); */
+  border: 5px solid #361612;
   overflow: scroll;
 }
 
@@ -122,9 +110,13 @@ footer img {
   width: 20%;
   height: 99%;
   top: 0px;
-  background: #C7406B;
-  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%);
-  border: 5px solid #644117;
+/*  background: #C7406B;
+  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%); */
+  background: #123524;
+  background: linear-gradient(180deg, rgba(18, 53, 36, 1) 0%, rgba(11, 31, 21, 1) 25%, rgba(6, 18, 12, 1) 75%);
+/*  background: #84172C;
+  background: linear-gradient(180deg, rgba(132, 23, 44, 1) 0%, rgba(107, 21, 40, 1) 25%, rgba(74, 14, 27, 1) 75%); */
+  border: 5px solid #361612;
   overflow: scroll;
  /* background: black;
   border-right-color: black;
@@ -135,13 +127,17 @@ footer img {
 .rightsidebar ul {
   position: absolute;
   text-align: left;
-/*  list-style-type: none;*/
-  list-style-image: url('https://pixelsafari.neocities.org/favicon/nature/plant/flower/blue9.gif');
+  list-style-type: none;
+/*  list-style-image: url('https://pixelsafari.neocities.org/favicon/nature/plant/flower/blue9.gif'); */
+}
+
+.rightsidebar li {
+  margin: 10px 0;
 }
 
 .rightsidebar a {
   position: relative;
-  color:#40C79C;
+  color: #BA4C3E;
   left: 30px;
   top: 5px;
 }
@@ -162,11 +158,20 @@ footer img {
   width: 58.5%;
   height: 99%;
   text-align: center;
-  background: #6e6e6e;
-  background: linear-gradient(180deg, rgba(110, 110, 110, 1) 0%, rgba(77, 77, 77, 1) 25%, rgba(43, 43, 43, 1) 75%);
-  /*background: #93C740;
-  background: linear-gradient(180deg, rgba(147, 199, 64, 1) 0%, rgba(96, 128, 45, 1) 25%, rgba(52, 69, 24, 1) 75%);*/
-  border: 5px solid #644117;
+  /* PURPLE */
+  /* background: #48205e;
+  background: linear-gradient(180deg, rgba(72, 32, 94, 1) 0%, rgba(41, 18, 54, 1) 25%, rgba(21, 9, 28, 1) 75%); */
+  /* BLUE */
+/*  background: #171236;
+  background: linear-gradient(180deg, rgba(23, 18, 54, 1) 0%, rgba(12, 9, 31, 1) 25%, rgba(7, 4, 20, 1) 75%);*/
+   /* BROWN */
+  background: #4a4318;
+  background: linear-gradient(180deg, rgba(74, 67, 24, 1) 0%, rgba(54, 49, 18, 1) 25%, rgba(26, 22, 9, 1) 75%);
+  /* GREY */
+/*  background: #6e6e6e;
+  background: linear-gradient(180deg, rgba(110, 110, 110, 1) 0%, rgba(77, 77, 77, 1) 25%, rgba(43, 43, 43, 1) 75%); */
+  /*border: 5px solid #362912; */
+  border: 5px solid #361612;
   border-right-color: black;
   border-left-color: black;
   overflow: scroll;
@@ -220,6 +225,7 @@ footer img {
   width: 70%;
   height: 70%;
   left: 15%;
+  top: 100px;
   text-align: center;
   background-image: url("/images/page1.png");
   background-size: contain;
@@ -230,7 +236,7 @@ footer img {
 
 .binderButton {
   position: relative;
-  top: 80%;
+  top: 70px;
   background-color: transparent;
   background-repeat: no-repeat;
   outline: none;
@@ -254,7 +260,7 @@ footer img {
 
 #binderButtonNext{
   position: relative;
-  left: 20px;
+  left: 250px;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
 }
@@ -268,7 +274,7 @@ footer img {
 
 #binderButtonBack {
   position: relative;
-  right: 20px;
+  right: 250px;
 }
 
 #binderButtonBack p {
@@ -278,7 +284,7 @@ footer img {
 
 #pageCaption {
   position: relative;
-  top: 75%;
+  top: 78%;
 /*  border-top: 2px solid grey;
   border-bottom: 2px solid gray; */
 }
