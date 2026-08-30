@@ -35,7 +35,8 @@ function mobileCheck() {
 
 function whenWindowLoads() {
 	if (mobileCheck() == true) {
-		alert("FYI this page isn't optimized 4 mobile");
+		document.getElementById('binderButtonBack').style.right = "80px";
+		document.getElementById('binderButtonNext').style.left = "80px";
 	}
 ////////////////////HTTP REDIRECT////////////////////
 	if (currentURL.indexOf("http://site") != -1) {

@@ -37,7 +37,10 @@ nav img:hover {
 }
 
 body {
-  background-color: black;
+  background: black;
+  background-image: url('/images/bg5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-family: Verdana;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -49,14 +52,12 @@ border: 2.5px solid #361612;
 }
 
 main {
-  /*height: 800px;
-  width: 600px;*/
   color: white;
   font-family: Verdana;
 }
 
 #pfp {
-  border: 5px solid #361612;
+  border: 5px solid #4a4318;
   position: absolute;
   top:  10px;
   left: 10px;
@@ -64,6 +65,9 @@ main {
 }
 
 footer {
+  position: relative;
+  top: 50px;
+  left: 5%;
   height: 100px;
 }
 
@@ -73,12 +77,12 @@ footer img {
 
 .body-container {
   position: relative;
-  left: 0px;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   height: 1000px;
   text-align: center;
-  background: #6e6e6e;
-  background: linear-gradient(180deg, rgba(110, 110, 110, 1) 0%, rgba(77, 77, 77, 1) 25%, rgba(43, 43, 43, 1) 75%);
+/*  background: #361612;
+  background: linear-gradient(180deg, rgba(54, 22, 18, 1) 0%, rgba(36, 14, 11, 1) 25%, rgba(23, 9, 7, 1) 75%); */
 }
 
 .leftsidebar {
@@ -87,13 +91,12 @@ footer img {
   width: 20%;
   height: 99%;
   top: 0px;
-/*  background: #C7406B;
-  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%); */
+/*  background: transparent; */
   background: #123524;
   background: linear-gradient(180deg, rgba(18, 53, 36, 1) 0%, rgba(11, 31, 21, 1) 25%, rgba(6, 18, 12, 1) 75%);
 /*  background: #84172C;
   background: linear-gradient(180deg, rgba(132, 23, 44, 1) 0%, rgba(107, 21, 40, 1) 25%, rgba(74, 14, 27, 1) 75%); */
-  border: 5px solid #361612;
+  border: 5px solid #4a4318;
   overflow: scroll;
 }
 
@@ -110,13 +113,11 @@ footer img {
   width: 20%;
   height: 99%;
   top: 0px;
-/*  background: #C7406B;
-  background: linear-gradient(180deg, rgba(199, 64, 107, 1) 0%, rgba(130, 43, 71, 1) 25%, rgba(46, 17, 25, 1) 75%); */
   background: #123524;
   background: linear-gradient(180deg, rgba(18, 53, 36, 1) 0%, rgba(11, 31, 21, 1) 25%, rgba(6, 18, 12, 1) 75%);
 /*  background: #84172C;
   background: linear-gradient(180deg, rgba(132, 23, 44, 1) 0%, rgba(107, 21, 40, 1) 25%, rgba(74, 14, 27, 1) 75%); */
-  border: 5px solid #361612;
+  border: 5px solid #4a4318;
   overflow: scroll;
  /* background: black;
   border-right-color: black;
@@ -165,13 +166,15 @@ footer img {
 /*  background: #171236;
   background: linear-gradient(180deg, rgba(23, 18, 54, 1) 0%, rgba(12, 9, 31, 1) 25%, rgba(7, 4, 20, 1) 75%);*/
    /* BROWN */
-  background: #4a4318;
-  background: linear-gradient(180deg, rgba(74, 67, 24, 1) 0%, rgba(54, 49, 18, 1) 25%, rgba(26, 22, 9, 1) 75%);
+  /*background: #4a4318;
+  background: linear-gradient(180deg, rgba(74, 67, 24, 1) 0%, rgba(54, 49, 18, 1) 25%, rgba(26, 22, 9, 1) 75%); */
   /* GREY */
 /*  background: #6e6e6e;
   background: linear-gradient(180deg, rgba(110, 110, 110, 1) 0%, rgba(77, 77, 77, 1) 25%, rgba(43, 43, 43, 1) 75%); */
   /*border: 5px solid #362912; */
-  border: 5px solid #361612;
+  background: #361612;
+  background: linear-gradient(180deg, rgba(54, 22, 18, 1) 0%, rgba(36, 14, 11, 1) 25%, rgba(23, 9, 7, 1) 75%);
+  border: 5px solid #4a4318;
   border-right-color: black;
   border-left-color: black;
   overflow: scroll;
@@ -260,7 +263,7 @@ footer img {
 
 #binderButtonNext{
   position: relative;
-  left: 250px;
+  left: 100px;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
 }
@@ -274,7 +277,7 @@ footer img {
 
 #binderButtonBack {
   position: relative;
-  right: 250px;
+  right: 100px;
 }
 
 #binderButtonBack p {
