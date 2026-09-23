@@ -201,7 +201,7 @@ footer img {
 }
 
 .messages {
- display: flex;
+  display: flex;
   flex-direction: column-reverse;
 }
 
